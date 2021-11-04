@@ -1,0 +1,32 @@
+IN_SYSTEM file for methane
+enter the system dimensionality
+3
+enter the number of atoms
+5
+Specify the system Geometry (Element, Mass, Position for each atom on a seperate line)
+C 12.00000 -0.0000014082    0.0000000000    0.0000000000
+H 1.0007825 2.0678994948    0.0000000000    0.0000000000
+H 1.0007825 -0.6859609046   -1.9402102195    0.0000000000
+H 1.0007825 -0.6859609046    0.9701051098    1.6802713388
+H 1.0007825 -0.6859609046    0.9701051098   -1.6802713388
+The number of atoms in fragments a and b respectively are
+5,0
+The atom identification numbers in fragment a are
+1,2,3,4,5
+The atom identification numbers in fragment b are
+
+enter the bond lengths, in order, which give the cutoff for a
+real bond to exist between atoms i and j (units are bohr)
+4.0d0
+4.0d0
+4.0d0
+4.0d0
+3.d0
+3.d0
+3.d0
+3.d0
+3.d0
+3.d0
+3.d0
+3.d0
+

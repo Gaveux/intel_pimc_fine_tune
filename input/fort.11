@@ -1,0 +1,91 @@
+ ---------------------------------------------------
+ 
+    read in molecule specifications from system.in.ch4
+ 
+IN_SYSTEM file for methane                                                      
+enter the system dimensionality                                                 
+           3
+enter the number of atoms                                                       
+           5
+Specify the system Geometry (Element, Mass, Position for each atom on a seperat
+ C     12.0000000000000      -1.408200000000000E-006  0.000000000000000E+000
+  0.000000000000000E+000
+ H     1.00078250000000        2.06789949480000       0.000000000000000E+000
+  0.000000000000000E+000
+ H     1.00078250000000      -0.685960904600000       -1.94021021950000     
+  0.000000000000000E+000
+ H     1.00078250000000      -0.685960904600000       0.970105109800000     
+   1.68027133880000     
+ H     1.00078250000000      -0.685960904600000       0.970105109800000     
+  -1.68027133880000     
+ atomic masses in atomic units (which are 1822*amu) 
+   21874.6617720000        1824.31489123638        1824.31489123638     
+   1824.31489123638        1824.31489123638     
+ ----------------------------------------------------
+ 
+  read path integral MC parameters from IN_PIMC 
+ 
+Number of beads                                                                 
+          30
+Temperature                                                                     
+   298.000000000000     
+Number of blocks, Blocks to equilibrium, samples per block                      
+          10           5         100
+Run Flyvbjerg blocking algorithm (y/n)                                          
+n
+Write out geometries at the end of each block (0=no, 1=yes)                     
+           0
+Do we use a restart file (y/n)                                                  
+n
+Enable/Disable writing a checkpoint file (y/n)                                  
+n
+Maximum step size for initial displacements                                     
+  1.000000000000000E-002
+                                                                                
+#speciy the trial move parameters                                               
+Trial Move Type (0=bead + atom move, 1=staging+atom move)                       
+           1
+Atomic displacement parameter(move acceptance)                                  
+   1.80000000000000     
+Displacement factor for bead moves                                              
+  0.100000000000000     
+Number of beads to displace per step(staging acceptance)                        
+          10
+                                                                                
+#Specify the action used                                                        
+Action type (0=Primitive Action, 1=Takahashi-Imada Action, 2=Chin Action 3=Suzuk
+           3
+t0 Parameter for chin action                                                    
+  9.200000000000000E-002
+a1 Parameter for chin action                                                    
+  0.256000000000000     
+alpha Parameter for Suzuki-Chin action                                          
+  0.000000000000000E+000
+ ----------------------------------------------------
+ 
+  read interpolation parameters from interp.in.ch4
+ 
+ System is CH4                                                                  
+ Enter 1 or 2 for one or two part weight function                               
+    we will use the 1 part weight function
+ Enter the weight powers q and p                                                
+           2          12
+ Enter the weight cutoffs for the inner and outer neighbour lists               
+  1.000000000000000E-005  1.000000000000000E-010
+ Enter the # of time steps for updates of the inner and outer neighbour lists   
+          10
+ Enter the maximum acceptable energy from POT, and expected minimum energy      
+  -40.1500000000000       -40.3677264823374     
+ Enter how many neighbours are used to define the confidence lengths            
+          50
+ Enter the energy error tolerance which defines the confidence lengths          
+  2.000000000000000E-004
+ ----------------------------------------------------
+  
+   read potential energy data from pot.402
+  
+  Read in         402  data points from pot.402
+  rejected            0  data points as higher than vmax
+  lowest potential energy in the POT file          =   -40.3677264823374     
+  lowest potential energy expected from IN_INTERP  =   -40.3677264823374     
+  lowest potential energy used (ie value of vmin)  =   -40.3677264823374     

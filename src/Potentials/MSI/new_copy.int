@@ -1,0 +1,10 @@
+
+interface
+  subroutine new_neigh_copy(create,pimc,old_neigh)
+     
+     type(msi_params), intent(out) :: create
+     type(old_neighbour_list),intent(out) :: old_neigh
+     type(pimc_par), intent(in) :: pimc
+     integer :: i,j,k,ierr 
+  end
+end interface
